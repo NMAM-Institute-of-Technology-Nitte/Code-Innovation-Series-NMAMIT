@@ -1,1 +1,0 @@
-WAITQR By Kernel Panic
