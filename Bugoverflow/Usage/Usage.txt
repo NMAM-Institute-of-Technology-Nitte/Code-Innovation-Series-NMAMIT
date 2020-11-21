@@ -1,0 +1,17 @@
+Basic Needs to run the app:
+	1:Xampp Server
+	2:Any local editor
+
+Steps to run the app
+1:copy the contents of folder Code into C:/xampp/htdocs/
+2:Start xampp server by going to xampp control panel and enabling apache server
+3:Open a web service provider app and type localhost/["folder Name"]/login.php
+
+
+
+Enjoy The Features
+
+
+
+//Still to Be hosted After Hosting the link will be provided below
+Link:
