@@ -1,0 +1,105 @@
+#sec{
+    height: 500px;
+    background-image: linear-gradient(to right, rgb(255, 208, 0),rgba(255,0,0,0), rgb(255, 166, 0) );
+    
+}
+#parent{
+    display: flex;
+}
+#left{
+    flex: 1;
+    padding-left: 5%;
+    margin-top: 5%;
+}
+#right{
+    flex: 1;
+    padding-left: 10%;
+    margin-top: 12%;
+
+}
+#bt
+{
+    flex: 1;
+    margin-left: 5%;
+    
+}
+body{
+    background-image: url("Images/algWallpaper.jpg");
+}
+h2{
+    margin-bottom: 5%;
+    padding-bottom: 30px;
+    font-size: 40px;
+    color: rgb(190, 9, 9);
+    color: whitesmoke;
+    font-style: italic;
+    text-decoration: underline;
+    text-decoration-style: dotted;
+}
+p{
+    color: rgb(212, 12, 12);
+    color: whitesmoke;
+    font-size: large;
+    line-height: 30px;
+}
+ul{
+    color: rgb(212, 12, 12);
+    color: whitesmoke;
+    font-size: large;
+    line-height: 30px;
+}
+li{
+    list-style-type: circle;
+}
+#container{
+    display: flex;
+    margin :5%;
+    padding-bottom: 4%;
+    background-color: rgba(216, 216, 146, 0.541);
+}
+#lt{
+    flex: 1;
+    padding-left: 5%;
+    margin-top: 5%;
+}
+#rt{
+    flex: 1;
+    padding-left: 10%;
+    margin-top: 10%;
+}
+#lt h5{
+    font-size: 27px;
+    padding-bottom: 4%;
+    color: wheat;
+    font-family: cursive;
+    font-style: italic;
+}
+#rt #out,.abt h5{
+    font-size: 25px;
+    padding-top: 15%;
+    padding-bottom: 2%;
+    color: wheat;
+    font-family: cursive;
+    font-style: italic;
+}
+span{
+    font-size: xx-large;
+    padding-right: 3%;
+}
+.abt{
+    margin-top: 10%;
+    margin :5%;
+    padding: 5%;
+    background-color: rgba(216, 216, 146, 0.541);
+}
+.abt h5{
+    padding-top: 0;
+}
+h1{
+    text-align: center;
+    font-family: cursive;
+    font-style: italic;
+    text-transform: uppercase;
+    color: wheat;
+    margin-bottom: 4%;
+}

@@ -1,0 +1,169 @@
+
+.footer-font{
+  color: white;
+
+}
+.footer-font a{
+  color: lightgray;
+}
+
+.card img{
+  height: 200px;
+}
+
+.btn-custom{
+  background-color: black;
+  font-weight: 900;
+
+}
+.btn span {
+  cursor: pointer;
+  color: lightgrey;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.btn span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+  
+}
+
+.btn:hover span {
+  padding-right: 25px;
+  text-decoration: none;
+}
+
+.btn:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+.myForm{
+  margin: 20px;
+  padding: 50px;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+.font-white{
+  color: white;
+}
+.info{
+  background-color: black;
+}
+.info-2{
+  background-color: lightgray;
+}
+
+body{
+  background-image:url(images/daria-nepriakhina-xY55bL5mZAM-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+.rating {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+}
+
+.rating>input {
+    display: none
+}
+
+.rating>label {
+  
+    width: 1em;
+    font-size: 2vw;
+    color: #000000;
+    cursor: pointer
+}
+
+.rating>label::before {
+    content: "\2605";
+    position: absolute;
+    opacity: 0
+}
+
+.rating>label:hover:before,
+.rating>label:hover~label:before {
+    opacity: 1 !important
+}
+
+.rating>input:checked~label:before {
+    opacity: 1
+}
+
+.rating:hover>input:checked~label:before {
+    opacity: 0.4
+}
+
+.zoom{
+  transition: transform .2s; /* Animation */
+  padding : 10px;
+  margin : 40px;
+}
+.zoom:hover {
+  transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+
+}
+.marg{
+  padding:20px;
+  background-color:lightgrey;
+ 
+}
+.carousel-item{
+  height : 450px;
+}
+.carousel-caption{
+  background-color : rgba(0,0,0,0.8);
+}
+
+.avatar { 
+  vertical-align: middle;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+
+}
+.jumbotron-new{
+  background-color: rgba(0, 0, 0, 0.9);
+  margin-top:100px;
+
+}
+.myForm{
+  margin: 20px;
+  margin-left: 50px;
+  margin-right: 50px;
+  padding: 50px;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+.avatar { 
+  vertical-align: middle;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+
+}
+.card-text-profile{
+  color:white;
+}
+.checked {
+  color: orange;
+}
+.heading{
+  text-align:center;
+  color:white;
+  font-weight:bolder;
+  font-size:50px;
+  background-color : rgba(0,0,0,0.8);
+  padding:20px;
+}
+
+    
