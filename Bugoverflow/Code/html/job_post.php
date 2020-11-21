@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index</title>
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,600&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" 
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="icon" href="../svg/main.png">
+    <link rel="stylesheet" href="../css/dashboard.css">
+    <link rel="stylesheet" href="../css/job_post.css">
+</head>
+<body>
+    <!-------------------------------------------------- Header ------------------------------------------------------------------->
+    <header>
+        <div class="container">
+            <nav class="flex items-center justify-between">
+                <div class="left flex items-center">
+                    <div class="branding">
+                        <a href="dashboard.html"><i class="fab fa-500px fa-3x">Jobly</i></a>
+                    </div>
+                    <div>
+                        <a href="job_post.php" target="_self">Post</a>
+                        <a href="searchjobs.php">Search</a>
+                        <a href="#">About</a>
+                        <a href="#">Services</a>
+                        <a href="#">Pages</a>
+                        <a href="#"></a>
+                    </div>
+                </div>
+                <div class="btn">
+                    <a class="btn btn-primary"  href="profile.html">Profile</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+</body>
+</html>
+    <!-------------------------------------------------- Form ------------------------------------------------------------------------->
+    <?php require_once 'insert.php'; ?>
+
+    <div class="container">
+        <div class="intro">
+            <pre>Contact skilled freelancers within minutes. View profiles, ratings, portfolios and chat with them.
+                Pay the freelancer only when you are 100% satisfied with their work.</pre>
+        </div>
+    </div>
+    <?php require_once 'insert.php'; ?>
+    <form method="POST" action="insert.php">
+        <div class="container">
+            <div class="name">
+                <h3>Name of Job:</h3>
+                <input type="text" name="project_name" placeholder="Enter Name">
+            </div>
+            <div class="description">
+                <h3>Tell us in brief about your project:</h3>
+                <textarea name="about" id="" cols="100" rows="10"></textarea>
+            </div>
+            <div class="checkbox">
+                <h3>What are the skills required?</h3>
+                <div id="checkbox">
+                    HTML5
+                    <input type="checkbox" name="html" value="html5">
+                    CSS
+                    <input type="checkbox" name="css" value="css">
+                    Javascript
+                    <input type="checkbox" name="javascript" value="javascript">
+                    Bootstrap
+                    <input type="checkbox" name="bootstrap" value="bootstrap">
+                    AngularJS/reactJS
+                    <input type="checkbox" name="angularoorreact" value="angularoorreact">
+                    PHP
+                    <input type="checkbox" name="php" value="php">
+                    NodeJS
+                    <input type="checkbox" name="nodejs" value="nodejs">
+                    MySQL
+                    <input type="checkbox" name="mysql" value="mysql">
+                    MongoDB
+                    <input type="checkbox" name="mongodb" value="mongodb">
+                    ExpressJS
+                    <input type="checkbox" name="expressjs" value="expressjs">
+                    Database Admin
+                    <input type="checkbox" name="admin" value="admin">
+                    </div>
+            </div>
+            
+            <div class="price">
+                <h3>What is the estimated price?</h3>
+                <label for="price_range">
+                    <select id="price_range" name="price_range" required>
+                        <option  value="micro">Micro Project (₹600-₹5000)</option>
+                        <option  value="simple">Simple Project (₹5000-₹20000)</option>
+                        <option  value="small">Small Project (₹20000-₹50000)</option>
+                        <option  value="medium">Medium Project (₹50000-₹100000)</option>
+                        <option  value="larger">Larger Project (₹100000-₹5000000)</option>
+                        <option  value="verylarge">Very large Project (₹5000000-₹10000000)</option>
+                        <option  value="major">Major Project (>₹10000000)</option>
+        
+                    </select>
+            </div>
+            <div class="submit">
+                <div class="btn">
+                    <!-- <button class="btn btn-primary btnn" name="submit">Submit</button> -->
+                    <input class="btn btn-primary btnn" type="submit" name="submit" value="submit">
+                </div>
+            </div>
+        </div>
+    </form>
+</body>
+</html>

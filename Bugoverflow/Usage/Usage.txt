@@ -1,0 +1,26 @@
+Basic Needs to run the app:
+	1:Xampp Server
+	2:Any local editor
+
+Steps to run the app
+1:copy the contents of folder Code into C:/xampp/htdocs/["folder name"]
+2:Start xampp server by going to xampp control panel and enabling apache server
+3:Open a web service provider app and type localhost/["folder Name"]/login.php
+4:Goto xampp control server and open admin page of Mysql server
+5:create database named user_data
+6:create table name as users with 3 data fields
+7:give names username , email , password to then add email as primary key
+8:save the database
+9:create a new database named freelance 
+10:create table name project_details and give 9 data fields
+11:name the fields as project_id,name,project_name,decription,job_type,price_range,assigned_status,assigned_to,trend_rate
+12:save the database
+
+
+
+Enjoy The Features
+
+
+
+//Still to Be hosted After Hosting the link will be provided below
+Link:
