@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<body>
+<br>
+<div class="boxx">
+
+<img src="https://i.ibb.co/cvx0wTv/Capture.png">
+<br>
+&nbsp;
+<br>
+<form action="describe.html" method="POST">
+<input type="text" class="email" placeholder="Username" id="name" autocomplete="off">
+&nbsp;
+<input type="password" class="email" placeholder="Password">
+<br>
+&nbsp;
+<input type="submit" class="button button1" value="Sign In" onclick="searched();"/>
+</form>
+</div>
+</div>
+</body>
+<script>
+function searched(){
+var name = document.getElementById("name").value;
+		localStorage.setItem("disp1",name);
+    return false;
+}
+</script>
+
+<style>
+  @font-face {
+    font-family: myFirstFont;
+    src: url(fonts/gordita_medium.woff);
+  }
+  .button1 {
+    background-color: black; 
+    color: black; 
+    border: 2px solid #e35f21;
+  }
+  
+  .button1:hover {
+    border: 2px solid #e35f21;
+    background-color: black;
+    color: #e35f21;
+  }
+  .button {
+    font-family: myFirstFont;
+    background-color:#e35f21;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+  }
+  .email{
+  font-family: Montserrat;
+      font-size: 15px;
+      color: #555555;
+      line-height: 1.2;
+      display: block;
+      width: 100%;
+      height: 45px;
+      background: transparent;
+      padding: 0 5px;
+  }
+  h1{
+  color:white;
+  
+  }
+  body{
+    background-color:#e35f21;
+    text-align:center;
+    
+  }
+  .boxx{
+    margin: auto;
+    border-radius:15px;
+      padding: 77px 55px 77px 55px;
+  background: #000;
+  width:390px;
+  }
+  
+  </style>
+</html>

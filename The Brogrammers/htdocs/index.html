@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+@font-face {
+  font-family: myFirstFont;
+  src: url(fonts/gordita_medium.woff);
+}
+@font-face {
+  font-family: mySecondFont;
+  src: url(fonts/gordita_light.woff);
+}
+@font-face {
+  font-family: myThirdFont;
+  src: url(fonts/gordita_black.woff);
+}
+
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: black;
+  border-radius: 20px;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  
+  font-size: 20px;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  padding-top: 30px;
+  padding-left: 20px;
+  text-decoration: none;
+  transition-duration: 0.4s;
+}
+
+li a:hover {
+  color: #e35f21;
+}
+
+body {
+    font-family: myFirstFont;
+    background-color: black;
+    background-image: url('https://i.ibb.co/0B2hCzg/new2.png');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: right bottom; 
+  
+  }
+
+p.a{
+  text-align: right;
+}
+img.a{
+  height:60px;
+  vertical-align: middle;
+}
+.head{
+  color:white;
+  font-size: 60px;
+}
+.tag{
+  font-family: mySecondFont;
+  color:white;
+  font-size: 30px;
+}
+.bart{
+  font-family: myThirdFont;
+}
+.pad{
+  padding-top:100px;
+  padding-left:15px;
+}
+.button {
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  background-color: #e35f21; 
+  color: black; 
+  border:2px solid #e35f21;
+}
+.button:hover {
+  background-color: black;
+  color: #e35f21;
+}
+
+
+</style>
+</head>
+<body>
+
+
+<ul>
+  <li><a  href="index.html">Home</a></li>
+  <li><a href="#about">About Us</a></li>
+  <p class="a">
+      <a href="#h"><img class="a" src="https://i.ibb.co/cvx0wTv/Capture.png"></a>
+      &nbsp;   
+  </p>
+</ul>
+<div class="pad">
+<span class="head">Welcome to <span class="bart">Bartr.</span></span><br>
+<span class="tag">Trade without Money? TOTALLY!</span><br>
+<p>
+<a href="sign.html"class="button button1">Sign In</a>
+&nbsp;
+<a href="sign.html" class="button button1" >Register</a>
+</p>
+</div>
+</body>
+</html>

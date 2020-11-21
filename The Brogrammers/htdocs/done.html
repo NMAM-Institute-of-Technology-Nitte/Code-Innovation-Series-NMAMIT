@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <title>Order</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row mt-5">
+            <div class="col-6 mt-5 offset-3 shadow-lg p-3 mb-5 bg-white rounded">
+                <h2>Exchange Successful!</h2>
+
+                <h4 class="mt-3 mb-3" id="id">Id: </h4>
+
+                <p class="border p-2 mt-2">You have successfully placed a request to exhange. You will receive a email
+                    confirmation shortly.</p>
+
+               
+
+
+            
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script>
+        function DecimalGenerate() {
+            var min = 1000,
+                max = 9999,
+                firstnumber = Math.random() * (max - min) + min;
+            var letters = ["A", "B", "C", "D", "E", "F", "G", "H", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"];
+            var firstletter = letters[Math.floor(Math.random() * letters.length)];
+            var secondletter = letters[Math.floor(Math.random() * letters.length)];
+            var min = 1000,
+                max = 9999,
+                secondnumber = Math.random() * (max - min) + min;
+            var secfirstletter = letters[Math.floor(Math.random() * letters.length)];
+            var secsecondletter = letters[Math.floor(Math.random() * letters.length)];
+
+            var result = firstnumber.toFixed().toString() + firstletter + secondletter + secondnumber.toFixed().toString() + secfirstletter + secsecondletter
+            var rand = document.getElementById('id');
+            rand.textContent = "Order Id: #" + result
+        };
+
+        DecimalGenerate();
+    </script>
+</body>
+<style>
+    body{
+        background-color: #e35f21;
+        font-family:gordita;
+    }
+</style>
+</html>

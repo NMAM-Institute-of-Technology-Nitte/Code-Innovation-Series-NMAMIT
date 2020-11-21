@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<head>
+    <title>Bartr</title>
+</head>
+
+<body>
+    <div class="mid">
+    <div class="boxx">
+    <h1>Hello <span id="unamed"></span>!</h1>
+    </div>
+    <h1><p class="a">Describe your product</p></h1>
+    <div>
+  <form action="message.php">
+    <label for="prname">Name of the product</label>
+    <input type="text" id="prname" name="prname" placeholder="Name..">
+    <p>
+    <label for="expro">Product(s) needed in exchange</label>
+    <input type="text" id="expro" name="expro">
+    </p>
+    <p>
+    <label for="warranty">Is warranty available? (for products with warranty)</label>
+    <select id="warranty" name="warranty">
+      <option value="available">Available</option>
+      <option value="notavailable">Not Available</option>
+      <option value="na">N/A</option>
+    </select>
+   </p>
+   <p>
+    <label for="desc">Describe the product</label>
+    <br>
+    <textarea id="desc" name="desc" rows="15" cols="80" >
+    </textarea>
+   
+  </p>
+  <p>
+    <label for="old">How old is the product?</label>
+    <select id="old" name="old">
+      <option value="three">Less than 3 months</option>
+      <option value="foursix">4 - 6 months</option>
+      <option value="sixtwelve">6 - 12 months</option>
+      <option value="year">More than a year</option>
+    </select>
+    <button type="button" onclick="disappear()">Select</button>
+  </p>
+    <div id="ret">
+    <label for="dura">If more than a year, type in the duration:</label>
+    <input type="text" id="dura" name="dura">
+    </div>
+    <br>
+  </div>
+    <input type="submit" class="button button1" value="Submit" onclick="addLead()">
+  </form>
+    </div>
+</body>
+
+<script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-database.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.1.1/firebase.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyDrlCQ1g8seYOBtVeqlMJRPgBhX8GVZCnU",
+    authDomain: "newdb-ad59c.firebaseapp.com",
+    databaseURL: "https://newdb-ad59c.firebaseio.com",
+    projectId: "newdb-ad59c",
+    storageBucket: "newdb-ad59c.appspot.com",
+    messagingSenderId: "943900445970",
+    appId: "1:943900445970:web:11bf2a3c7252c2ae5ab7cb"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  var database = firebase.database();
+</script>
+
+<script>
+    uname=localStorage.getItem("disp1");
+    document.getElementById("unamed").innerHTML=uname;
+    var x = document.getElementById("ret");
+    x.style.display = "none";
+    function disappear() {
+  var a = document.getElementById("old").value;
+  
+  if (a == "year")
+  {
+    x.style.display = "block";
+  }
+  else
+  {
+    x.style.display = "none";
+  }
+    }
+    function addLead() {
+   var product=document.getElementById("prname").value;
+
+   var expro =document.getElementById("expro").value;
+     
+   var warranty = document.getElementById("warranty").value;
+     
+   var desc = document.getElementById("desc").value;
+     
+    var old = document.getElementById("old").value;
+
+    function writeUserData(userId, name, product) {
+   firebase.database().ref('users/' + userId).set({
+    name: uname,
+    product : product
+  });
+}
+
+
+  
+    }
+
+  </script>
+
+
+
+<style>
+  .mid{
+    padding: 20px 100px 77px 100px;
+    text-align:center;
+  }
+  
+  @font-face {
+    font-family: gordita;
+    src: url(fonts/gordita_medium.woff);
+  }
+  body{
+  font-family: gordita;
+  background-color:#e35f21;
+  color:white;
+  }
+  input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  
+}
+.boxx{
+  width: 100%;
+  height:100%;
+  border-radius: 10px;
+  text-align:center;
+  background-color:black;
+}
+p.a{
+  text-decoration: underline;
+}
+
+.button1 {
+    background-color: black; 
+    color: black; 
+    border: 2px solid #e35f21;
+  }
+  
+  .button1:hover {
+    border: 2px solid black;
+    background-color: #e35f21;
+    color: black;
+  }
+  .button {
+    font-family: gordita;
+   border-radius: 5px;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+  }
+
+
+div {
+  text-align:left;   
+  border-radius: 5px;;
+  padding: 20px;
+}
+</style>
+</html>
