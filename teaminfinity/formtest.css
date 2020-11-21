@@ -1,0 +1,38 @@
+input[type=text],[type=email], [type=tel],[type=date],select{
+  width: 100%;
+  padding: 5px 8px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 3px solid red;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  outline: none;
+  margin-top:-15px;
+  
+}
+
+input[type=text]:focus {
+  border: 3px solid black;
+}
+input[type=email]:focus {
+  border: 3px solid green;
+}
+input[type=tel]:focus {
+  border: 3px solid green;
+}
+input[type=date]:focus {
+  border: 3px solid green;
+}
+.btn1{
+	background-color:yellow;
+  border: none;
+  color: red;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius:20px;
+}
